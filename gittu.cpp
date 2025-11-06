@@ -24,7 +24,9 @@ int main(){ //main function
     Book book2("The Giving Tree", "Shel Silverstein", 1964);
 
     book1.displayInfo();
-    cout<<"*******"<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
     book2.displayInfo();
     return 0;
 }
