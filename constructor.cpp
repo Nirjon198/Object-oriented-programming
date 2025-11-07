@@ -15,8 +15,46 @@ public: //access specifier
     cout<<"HELLO WORLD!THIS IS A CONSTRUCTOR"<<endl;
  }
 };
+class Car{
+    public:
+    string brand;
+    string model;
+    int year;
+        Car(string x,string y,int z){   //constructor with parameter
+            brand=x;
+            model=y;
+            year=z;
+
+        }
+};
+//constructor defined outside the class 
+class Bike{
+public:
+    string mileage;
+    string displacement;
+    int cylinder;
+    int fuel_capacity;
+
+    Bike(string m,string d,int c,int f);
+};
+Bike::Bike(string m, string d, int c, int f)
+{
+    mileage = m;
+    displacement = d;
+    cylinder = c;
+    fuel_capacity = f;
+}
+
 int main(){
     Constructor myObj; //Create an object for the class.this will call the constructor
-return 0;
-
+    cout<<endl<<endl<<endl;
+    Car myObj1("BMW","X5",1999);
+    cout<<myObj1.brand<<endl<<myObj1.model<<endl<<myObj1.year; //calling a constructor with parameter
+    cout<<endl<<endl<<endl;
+    Bike myObj2("45 kmpl", "155 cc",1,11);
+    cout << "Mileage(Overall): " << myObj2.mileage<< endl;
+    cout<<"Displacement : "<<myObj2.displacement<<endl;
+    cout<<"No.of cylinder"<<myObj2.cylinder<<endl;
+    cout<<"Fuel Capacity : "<<myObj2.fuel_capacity<<endl;
+    return 0;
 }
