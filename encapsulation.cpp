@@ -28,7 +28,7 @@ class Employee{
 };
 int main(){
     Employee myObj;
-    myObj.setSalary(50000);
+    myObj.setSalary(50000); // We use myObj.setSalary(50000) to assign a value, and myObj.getSalary() to print it.
     cout<<myObj.getSalary()<<endl;
     return 0;
 }
