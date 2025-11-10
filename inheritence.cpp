@@ -9,7 +9,7 @@ class Vehicle{
         cout<<"peep peep \n";
     }
 };
-class Car:public Vehicle{
+class Car:public Vehicle{ //child class which has been extended from vehicle class
     public:
     string model="X5";
 };
