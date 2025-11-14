@@ -87,15 +87,31 @@ using namespace std;
 //     return 0;
 // }
 //insert function
+// int main(){
+//     vector<int>nums={1,2,3,4,5,6,7,8};
+//     for(int val:nums){
+//         cout<<val<<" ";
+//     }
+//     cout<<endl;
+//     nums.insert(nums.begin()+3,100); //this is how we insert a value to vector.the value enter to next right 4 
+//     for (int val : nums)
+//     {
+//         cout << val << " ";
+//     }
+// }
+//clear function &empty function
 int main(){
     vector<int>nums={1,2,3,4,5,6,7,8};
-    for(int val:nums){
-        cout<<val<<" ";
-    }
-    cout<<endl;
-    nums.insert(nums.begin()+3,100); //this is how we insert a value to vector.the value enter to next right 4 
     for (int val : nums)
     {
         cout << val << " ";
     }
+    cout<<endl;
+    cout<<"is our function empty?\nAns: "<<nums.empty()<<endl; //to check if my function got empty or not
+    cout<<"size : "<<nums.size()<<endl;
+    cout<<"capacity : "<<nums.capacity()<<endl;
+    nums.clear(); //clear the value of vector
+    cout << "is our function empty?\nAns: " << nums.empty()<<endl;
+    cout<<"size : "<<nums.size()<<endl;
+    cout<<"capacity : "<<nums.capacity()<<endl;
 }
