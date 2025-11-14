@@ -75,12 +75,27 @@ using namespace std;
     // }
 //     return 0; 
 // }
-int main(){
-    vector<int>num={3884,1881,4773,9090,9999,6594,9086,3454,36754,23466,867,123,456};
-    num.erase(num.begin()+1,num.begin()+3);
-    for(int val : num){
-        cout<<val<<endl;
+//erase function
+// int main(){
+//     vector<int>num={3884,1881,4773,9090,9999,6594,9086,3454,36754,23466,867,123,456};
+//     num.erase(num.begin() + 1, num.begin() + 3); // erase(start, end) works like this: it starts counting from the beginning at start, and removes elements up to end, but not including end.
+//     //*** erase remove the size of vector but capacity remains same as before
+//     for(int val : num){
+//         cout<<val<<endl;
        
+//     }
+//     return 0;
+// }
+//insert function
+int main(){
+    vector<int>nums={1,2,3,4,5,6,7,8};
+    for(int val:nums){
+        cout<<val<<" ";
     }
-    return 0;
+    cout<<endl;
+    nums.insert(nums.begin()+3,100); //this is how we insert a value to vector.the value enter to next right 4 
+    for (int val : nums)
+    {
+        cout << val << " ";
+    }
 }
