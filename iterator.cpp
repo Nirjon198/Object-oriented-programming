@@ -22,6 +22,9 @@ using namespace std;
 // }
 int main(){
     vector<int>vec={1,2,3,4,5};
-    cout<<*vec.end(); //it will not point next element of 5 which will return garbage value
+    cout<<*vec.end()<<endl; //it will not point next element of 5 which will return garbage value
+    cout<<*vec.begin()<<endl;
+    cout<<*vec.rbegin()<<endl;
+    cout<<*vec.rend(); //will return garbage value
     return 0;
 }
